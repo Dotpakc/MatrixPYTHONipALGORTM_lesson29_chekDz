@@ -8,6 +8,9 @@ from aiogram import types
 
 main_keyboard = types.InlineKeyboardMarkup(row_width=1)
 main_keyboard.add(
+    #Фільми
+    types.InlineKeyboardButton(text='🎬 Фільми', callback_data='films'),
+    
     types.InlineKeyboardButton(text='Математична гра', callback_data='math_game'),
 
     types.InlineKeyboardButton(text='➕Додати нагадування', callback_data='add_reminder')
